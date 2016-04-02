@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/mock_b/resources/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/mock_b/resources/css/main.css" media="all">
+  </head>
+  <body>
+    <div class="main_wrap">
+      <h1>MainPage</h1>
+      <ul class="login_info logout_link">
+        <li><i class="fa fa-user"></i>hogehoge@example.com
+        <li class=""><a href="/mock_b/logout.html"><i class="fa fa-exclamation-circle"></i>Logout</a>
+      </ul>
+      <nav id="header_nav">
+        <form action="">
+          <ul class="search">
+            <li>検索 :
+              <select>
+                <option>キーワード </option>
+                <option>ISBN・雑誌コード</option>
+                <option>書名</option>
+                <option>著者名</option>
+              </select>
+              <input type="text" size="30" placeholder="検索ワード">
+              <select>
+                <option> -- ジャンル -- </option>
+                <option>JAVA</option>
+                <option>HTML・CSS</option>
+                <option>サーバー</option>
+                <option>自己啓発</option>
+              </select>
+              <input class="submit" type="submit" value="検索">
+          </ul>
+        </form>
+
+        <ul class="page_list">
+          <li class="active"><a class="tab" href=""><i class="fa fa-home"></i>TOP</a>
+          <li><a class="tab" href="bookList.html"><i class="fa fa-book"></i>書籍一覧</a>
+          <li><a class="tab" href="reservationList.html"><i class="fa fa-share"></i>リクエスト</a>
+          <li><a class="tab" href="rentalHistory.html"><i class="fa fa-history"></i>レンタル履歴</a>
+          <li><a class="tab"  href="setting.html"><i class="fa fa-cog"></i>設定</a>
+        </ul>
+
+      </nav>
+
+      <h2 class="block_title"><i class="fa fa-th-list"></i>USER INFOMATION</h2>
+      <div class="info_val">
+        <ul class="user_info">
+          <li><i class="fa fa-chevron-circle-right blue"></i><a href="reservationList.html">レンタル可能な書籍があります!</a>
+          <li><i class="fa fa-chevron-circle-right blue"></i><a href="reservationList.html">リクエストしていた書籍が入荷しました!</a>
+          <li><i class="fa fa-exclamation-triangle red"></i><a href="reservationList.html">返却日を過ぎた書籍があります</a>
+        </ul>
+      </div>
+
+      <div class="side_wrap">
+        <h2 class="block_title"><i class="fa fa-th-list"></i>NEWS</h2>
+        <div class="value">
+          <ul>
+            <li><span><i class="fa fa-calendar"></i>3/22</span><div>TEST</div>
+            <li><span><i class="fa fa-calendar"></i>3/18</span><div>TESTTEST</div>
+            <li><span><i class="fa fa-calendar"></i>3/18</span><div>TESTTEST</div>
+          </ul>
+          <a href="./moreInfo.html"><span>more info</span></a>
+        </div>
+      </div>
+
+      <div class="right_wrap">
+        <h2 class="block_title"><i class="fa fa-th-list"></i>RECENT MOTION</h2>
+        <div class="value">
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="footer_nav" class="clear">
+        <i class="fa fa-copyright"></i>hogehoge
+      </nav>
+
+    </div><!-- main_wrap -->
+  </body>
+</html>

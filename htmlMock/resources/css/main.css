@@ -1,0 +1,54 @@
+/** main page style */
+div.side_wrap h2, div.right_wrap h2 {
+    margin: 0;
+}
+div.value {
+    margin: 0 0 05px 5px;
+    height: 90%;
+    overflow-y: scroll;
+}
+div.value span {
+    font-weight: bold;
+}
+div.value div {
+    margin-left: 5px;
+}
+div.info_val {
+    margin: 0 5px;
+    padding-bottom: 5px;
+    border: solid 2px #aaaaff;
+    max-height: 100px;
+    overflow-y: auto;
+}
+div.info_val ul {
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+div.info_val li {
+}
+div.side_wrap, div.right_wrap {
+    height: 300px;
+    margin: 5px;
+    border: solid 2px #aaf;
+}
+div.side_wrap {
+    width: 70%;
+    float: left;
+}
+div.right_wrap {
+    width: 25%;
+    float: right;
+}
+div.side_wrap li > span {
+    font-weight: bold;
+}
+div.side_wrap li > div {
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+}
+
+div.side_wrap a span {
+    display: block;
+    padding-right: 15px;
+    text-align: right;
+}
