@@ -103,10 +103,11 @@ input {
     position: relative;
 }
 
-input.submit {
-    width: 100px;
+button.submit {
+    width: 80px;
     height: 23px;
-    background: #aaaaff;
+    border: solid 1px #aaf;
+    background: #aaf;
 }
 
 /** navigations style */
@@ -122,7 +123,7 @@ nav#header_nav ul.page_list {
 nav#header_nav ul.page_list li {
     margin: 0 5px 0 0;
     padding: 0;
-    width: 16%;
+    width: 17%;
 }
 
 nav#header_nav ul.page_list li a.tab {

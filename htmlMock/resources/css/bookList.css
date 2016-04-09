@@ -1,0 +1,47 @@
+nav#pager {
+    text-align: center;
+}
+nav#pager ul {
+    margin-top: 0;
+    padding-top: 0;
+}
+nav#pager ul li{
+    display: inline-block;
+}
+nav#pager ul li span, nav#pager ul li a{
+    display: inline-block;
+    min-width: 2em;
+}
+div.list {
+    width: 90%;
+    margin: 0 auto;
+}
+div.book_list {
+    margin: 10px auto;
+    max-height: 350px;
+    overflow-y: auto;
+}
+div.book_info {
+    padding: 30px;
+}
+div.cover {
+    width: 40%;
+    text-align: right;
+}
+table.book_detail {
+    float: right;
+    width: 60%;
+}
+tr, th, td {
+    text-align: left;
+    padding: 3px 5px 3px 15px;
+}
+th {
+    width: 35%;
+}
+td {
+    width: 65%;
+}
+.cover {
+    float: left;
+}
