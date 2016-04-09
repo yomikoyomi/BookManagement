@@ -1,0 +1,14 @@
+/** login style */
+body {
+}
+h1 {
+    text-align: center;
+}
+.main_wrap > div {
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+}
+form {
+    width: 100%;
+}

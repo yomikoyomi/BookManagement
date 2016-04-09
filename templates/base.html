@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}My books{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" media="all">
+    {% block extrahead %}{% endblock %}
+  </head>
+  <body>
+    <div class="main_wrap">
+      {% block content %}
+          {{ content }}
+      {% endblock %}
+    </div>
+  </body>
+</html>
