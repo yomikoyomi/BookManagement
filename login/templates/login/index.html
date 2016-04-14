@@ -11,20 +11,21 @@
 {% block content %}
 <h1>書籍管理しすてむversion 0.1</h1>
 <div class="radius">
-  <form action="./main/">
-    <div>
-      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-      <input class="form-control" type="text" placeholder="Email address">
-    </div>
-    <div>
-      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-      <input class="form-control" type="password" placeholder="Password">
-    </div>
-      <input class="submit" type="submit" value="ログイン" />
-  </form>
+    <form action="./auth/" method="post">
+        {% csrf_token %}
+        <div>
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input class="form-control" type="text" placeholder="Email address" name="username">
+        </div>
+        <div>
+            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+            <input class="form-control" type="password" placeholder="Password" name="password">
+        </div>
+        <input class="submit" type="submit" value="ログイン" />
+    </form>
 </div>
 <nav id="footer_nav" class="clear">
-  <i class="fa fa-copyright"></i>hogehoge
+    <i class="fa fa-copyright"></i>hogehoge
 </nav>
 {% endblock content %}
 
