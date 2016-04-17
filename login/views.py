@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 
 def index(request):
@@ -24,3 +24,8 @@ def auth(request):
         return HttpResponseRedirect('/bookManagement/info/')
     else:
         return HttpResponse('ログイン失敗')
+
+
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect('/bookManagement/login/')

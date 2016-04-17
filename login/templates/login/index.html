@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %}書籍管理{% endblock title %}
 
 {% block extrahead %}
-<style>
-  table {
-  margin-top: 8px;
-  }
-</style>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" media="all">
+    <style>
+        table {
+            margin-top: 8px;
+        }
+    </style>
 {% endblock %}
 {% block content %}
 <h1>書籍管理しすてむversion 0.1</h1>
