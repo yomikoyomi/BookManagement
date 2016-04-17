@@ -1,0 +1,84 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+{% block title %}インフォメーション{% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" media="all">
+{% endblock %}
+{%block content %}
+      <h2 class="block_title"><i class="fa fa-th-list"></i>USER INFOMATION</h2>
+      <div class="info_val">
+        <ul class="user_info">
+          <li><i class="fa fa-chevron-circle-right blue"></i><a href="reservationList.html">レンタル可能な書籍があります!</a>
+          <li><i class="fa fa-chevron-circle-right blue"></i><a href="reservationList.html">リクエストしていた書籍が入荷しました!</a>
+          <li><i class="fa fa-exclamation-triangle red"></i><a href="reservationList.html">返却日を過ぎた書籍があります</a>
+        </ul>
+      </div>
+
+      <div class="side_wrap">
+        <h2 class="block_title"><i class="fa fa-th-list"></i>NEWS</h2>
+        <div class="value">
+            <ul>
+                {% for info in infomation %}
+                <li>
+                    <span>
+                        {% ifequal info.infomation_division '02' %}
+                        <i class="fa fa-calendar red"></i>
+                        {% else %}
+                        <i class="fa fa-calendar"></i>
+                        {% endifequal %}
+                        {{ info.title }}   {{ info.date_updated }}
+                    </span>
+                    <div>
+                        {{ info.value | safe | linebreaks }}
+                    </div>
+                 </li>
+                 {% endfor %}
+            </ul>
+            <a href="./moreInfo.html"><span>more info</span></a>
+        </div>
+      </div>
+
+      <div class="right_wrap">
+        <h2 class="block_title"><i class="fa fa-th-list"></i>RECENT MOTION</h2>
+        <div class="value">
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+          <div>
+            <span>title</span>
+            <div>
+              values
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock content %}
+
